@@ -1,0 +1,9 @@
+com\ensat\controllers\ProductViewController.class
+com\ensat\entities\Product.class
+com\ensat\repositories\ProductRepository.class
+com\ensat\SpringBootWebApplication.class
+com\ensat\services\ProductService.class
+com\ensat\controllers\IndexController.class
+com\ensat\GlobalExceptionHandler\GlobalExceptionHandler.class
+com\ensat\controllers\ProductRestController.class
+com\ensat\services\ProductServiceImpl.class

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Spring Boot Exemple</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+
+    <style>
+
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+
+            padding: 1rem;
+            background: #fff;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img th:src="@{'/images/uploads/' + ${product.imagePath}}" alt="Product Image" class ="card-img-top mb-5 mb-md-0"/></div>
+            <div class="col-md-6">
+                <div class="small mb-1"><p class="form-control-static" th:text="${product.id}">Product Id</p></div>
+                <h1 class="display-5 fw-bolder" th:text="${product.name}">name</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text" th:text="${product.price}">Price</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>
